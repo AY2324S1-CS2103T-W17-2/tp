@@ -7,10 +7,9 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
+        "tham-you-wei": "Tham You Wei",
         "timothy-putra-prasetio": "Timothy Putra Prasetio",
         "aprup-kale": "Aprup Kale",
-        "johnny-doe": "Johnny Doe",
-        "jean-doe": "Jean Doe",
         "zhi-sheng": "Zhi Sheng"
       },
       "headingKeywords": {}
@@ -144,15 +143,15 @@
       "headingKeywords": {}
     },
     {
-      "src": "team/johndoe.md",
-      "title": "John Doe's Project Portfolio Page",
+      "src": "team/tim-pipi.md",
       "headings": {
-        "project-addressbook-level-3": "Project: AddressBook Level 3"
+        "project-letsgethired": "Project: LetsGetHired"
       },
       "headingKeywords": {}
     },
     {
-      "src": "team/tim-pipi.md",
+      "src": "team/tyouwei.md",
+      "title": "You Wei's Project Portfolio Page",
       "headings": {
         "project-letsgethired": "Project: LetsGetHired"
       },
