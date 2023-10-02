@@ -8,7 +8,7 @@
         "about-us": "About Us",
         "project-team": "Project team",
         "john-doe": "John Doe",
-        "jane-doe": "Jane Doe",
+        "aprup-kale": "Aprup Kale",
         "johnny-doe": "Johnny Doe",
         "jean-doe": "Jean Doe",
         "james-doe": "James Doe"
@@ -132,6 +132,14 @@
       "title": "",
       "headings": {
         "addressbook-level-3": "AddressBook Level-3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/aprupkale.md",
+      "title": "Aprup Kale's Project Portfolio Page",
+      "headings": {
+        "project-letsgethired": "Project: LetsGetHired"
       },
       "headingKeywords": {}
     },
