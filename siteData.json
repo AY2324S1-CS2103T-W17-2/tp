@@ -8,6 +8,7 @@
         "about-us": "About Us",
         "project-team": "Project team",
         "tham-you-wei": "Tham You Wei",
+        "zheng-yu": "Zheng Yu",
         "timothy-putra-prasetio": "Timothy Putra Prasetio",
         "aprup-kale": "Aprup Kale",
         "zhi-sheng": "Zhi Sheng"
@@ -152,6 +153,14 @@
     {
       "src": "team/tyouwei.md",
       "title": "You Wei's Project Portfolio Page",
+      "headings": {
+        "project-letsgethired": "Project: LetsGetHired"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/zhengyup.md",
+      "title": "Zheng Yu's Project Portfolio Page",
       "headings": {
         "project-letsgethired": "Project: LetsGetHired"
       },
