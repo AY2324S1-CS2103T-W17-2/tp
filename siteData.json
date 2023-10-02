@@ -11,7 +11,7 @@
         "aprup-kale": "Aprup Kale",
         "johnny-doe": "Johnny Doe",
         "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "zhi-sheng": "Zhi Sheng"
       },
       "headingKeywords": {}
     },
@@ -153,6 +153,14 @@
     },
     {
       "src": "team/tim-pipi.md",
+      "headings": {
+        "project-letsgethired": "Project: LetsGetHired"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/zsh_eng.md",
+      "title": "Zhi Sheng's Project Portfolio Page",
       "headings": {
         "project-letsgethired": "Project: LetsGetHired"
       },
