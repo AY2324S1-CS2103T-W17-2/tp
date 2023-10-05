@@ -254,7 +254,7 @@ with(this){return _c('p',[_c('strong',[_v("UC3: View an internship application")
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to list all internship applications (UC2)")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays all the internship applications")])]),_v(" "),_c('li',[_c('p',[_v("User requests to view a specific internship application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays the required internship application")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to "),_c('ins',[_v("list all internship applications (UC2)")])])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays all the internship applications")])]),_v(" "),_c('li',[_c('p',[_v("User requests to view a specific internship application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays the required internship application")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -263,13 +263,13 @@ with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("2a. The list is empty")]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("3a. The command format is incorrect")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("3a1. AddressBook shows an error message, guiding users on the correct format.")]),_v(" "),_c('p',[_v("Use case ends.")])])])]),_v(" "),_c('li',[_c('p',[_v("3b. The index of internship application entered is incorrect")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("3b1. AddressBook shows an error message.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("UC4: Delete an internship applications")])])}
+with(this){return _c('p',[_c('strong',[_v("UC4: Delete an internship application")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User requests to list all internship applications (UC2)")]),_v(" "),_c('li',[_v("LetsGetHired displays all the internship applications")]),_v(" "),_c('li',[_v("User requests to delete a specific internship application")]),_v(" "),_c('li',[_v("LetsGetHired deletes the required internship application")]),_v(" "),_c('li',[_v("LetsGetHired displays the current number of internship applications")])])}
+with(this){return _c('ol',[_c('li',[_v("User requests to "),_c('ins',[_v("list all internship applications (UC2)")])]),_v(" "),_c('li',[_v("LetsGetHired displays all the internship applications")]),_v(" "),_c('li',[_v("User requests to delete a specific internship application")]),_v(" "),_c('li',[_v("LetsGetHired deletes the required internship application")]),_v(" "),_c('li',[_v("LetsGetHired displays the current number of internship applications")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -284,7 +284,7 @@ with(this){return _c('p',[_c('strong',[_v("UC5: Update the status of an internsh
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User requests to list all internship applications (UC2)")]),_v(" "),_c('li',[_v("LetsGetHired displays all the internship applications")]),_v(" "),_c('li',[_v("User requests to update the status of a specific internship application")]),_v(" "),_c('li',[_v("LetsGetHired updates the required internship application")]),_v(" "),_c('li',[_v("LetsGetHired displays the updated internship application")])])}
+with(this){return _c('ol',[_c('li',[_v("User requests to "),_c('ins',[_v("list all internship applications (UC2)")])]),_v(" "),_c('li',[_v("LetsGetHired displays all the internship applications")]),_v(" "),_c('li',[_v("User requests to update the status of a specific internship application")]),_v(" "),_c('li',[_v("LetsGetHired updates the required internship application")]),_v(" "),_c('li',[_v("LetsGetHired displays the updated internship application")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -311,7 +311,7 @@ with(this){return _c('p',[_c('strong',[_v("UC7: Edit the details of an applicati
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to list applications or "),_c('ins',[_v("searches for applications (UC6)")])])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired shows a list of applications")])]),_v(" "),_c('li',[_c('p',[_v("User provides new information to update the chosen application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired updates the application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays the updated application")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to "),_c('ins',[_v("list all internship applications (UC2)")])])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired shows a list of applications")])]),_v(" "),_c('li',[_c('p',[_v("User provides new information to update the chosen application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired updates the application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays the updated application")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -326,7 +326,7 @@ with(this){return _c('p',[_c('strong',[_v("UC8: Add a note to an application")])
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to list applications or "),_c('ins',[_v("searches for applications (UC6)")])])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired shows a list of applications")])]),_v(" "),_c('li',[_c('p',[_v("User provides note to add to specific application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired adds the note to the application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays the application with the added note")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to "),_c('ins',[_v("list all internship applications (UC2)")])])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired shows a list of applications")])]),_v(" "),_c('li',[_c('p',[_v("User provides note to add to specific application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired adds the note to the application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays the application with the added note")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -341,13 +341,13 @@ with(this){return _c('p',[_c('strong',[_v("UC9: Delete a note on an application"
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to list applications or "),_c('ins',[_v("searches for applications (UC6)")])])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired shows a list of applications")])]),_v(" "),_c('li',[_c('p',[_v("User requests to view a specific application")])]),_v(" "),_c('li',[_c('p',[_v("User requests to delete a specific note from a specific application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired deletes the note from the application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays the application with the updated list of notes")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to "),_c('ins',[_v("view a specific application (UC3)")])])]),_v(" "),_c('li',[_c('p',[_v("User requests to delete a specific note from the application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired deletes the note from the application")])]),_v(" "),_c('li',[_c('p',[_v("LetsGetHired displays the application with the updated list of notes")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("2a. The list is empty.")]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("3a. The given application index is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("3a1. LetsGetHired shows an error message and shows number of current applications.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])]),_v(" "),_c('li',[_c('p',[_v("3b. The application has no notes.")]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("4a. The given note index is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4a1. LetsGetHired shows an error message and shows number of current notes attached to the application.")]),_v(" "),_c('p',[_v("Use case resumes at step 3.")])])])]),_v(" "),_c('li',[_c('p',[_v("4b.The command format is incorrect.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("4b1. LetsGetHired shows an error message, guiding users on the correct command format.")]),_v(" "),_c('p',[_v("Use case resumes at step 3.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. The application has no notes.")]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("2a. The given note index is invalid.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2a1. LetsGetHired shows an error message and shows number of current notes attached to the application.")]),_v(" "),_c('p',[_v("Use case resumes at step 3.")])])])]),_v(" "),_c('li',[_c('p',[_v("2b.The command format is incorrect.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("2b1. LetsGetHired shows an error message, guiding users on the correct command format.")]),_v(" "),_c('p',[_v("Use case resumes at step 1.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("UC10: Sort Applications")])])}
@@ -422,6 +422,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Wed, 4 Oct 2023, 14:34:14 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Thu, 5 Oct 2023, 12:53:58 GMT+8]")])])])}
 }];
   
