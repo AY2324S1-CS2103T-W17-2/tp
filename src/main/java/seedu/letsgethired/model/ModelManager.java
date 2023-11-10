@@ -14,7 +14,6 @@ import javafx.collections.transformation.SortedList;
 import seedu.letsgethired.commons.core.GuiSettings;
 import seedu.letsgethired.commons.core.LogsCenter;
 import seedu.letsgethired.model.application.InternApplication;
-import seedu.letsgethired.model.application.InternApplicationComparator;
 
 /**
  * Represents the in-memory model of the intern tracker data.
