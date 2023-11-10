@@ -52,11 +52,7 @@ activate NoteInsertCommand
 NoteInsertCommand -> Model : setInternApplication()
 activate Model
 
-Model --> NoteInsertCommand
-deactivate Model
 
-NoteInsertCommand -> Model : updateFilteredInternApplicationList()
-activate Model
 
 Model --> NoteInsertCommand
 deactivate Model
