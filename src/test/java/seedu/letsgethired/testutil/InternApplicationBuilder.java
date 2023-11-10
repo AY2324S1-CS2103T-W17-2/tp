@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import seedu.letsgethired.model.application.Company;
 import seedu.letsgethired.model.application.Cycle;
 import seedu.letsgethired.model.application.Deadline;
+import seedu.letsgethired.model.application.Id;
 import seedu.letsgethired.model.application.InternApplication;
 import seedu.letsgethired.model.application.Note;
 import seedu.letsgethired.model.application.Role;
@@ -17,14 +18,14 @@ import seedu.letsgethired.model.application.Status;
  * A utility class to help with building InternApplication objects.
  */
 public class InternApplicationBuilder {
-
-    public static final String DEFAULT_COMPANY = "Amy Bee";
+    public static final String DEFAULT_COMPANY = "Jane Street";
     public static final String DEFAULT_ROLE = "Intern";
     public static final String DEFAULT_CYCLE = "Summer 2021";
     public static final String DEFAULT_STATUS = "Pending";
     public static final String DEFAULT_NOTE = "Jane Street is the leading market maker in the APAC region";
     public static final String DEFAULT_DEADLINE = "24 Oct 2023";
 
+    private Id id;
     private Company company;
     private Role role;
     private Cycle cycle;
@@ -36,6 +37,7 @@ public class InternApplicationBuilder {
      * Creates a {@code InternApplicationBuilder} with the default details.
      */
     public InternApplicationBuilder() {
+        id = Id.generateNewUseableId();
         company = new Company(DEFAULT_COMPANY);
         role = new Role(DEFAULT_ROLE);
         cycle = new Cycle(DEFAULT_CYCLE);
@@ -49,6 +51,7 @@ public class InternApplicationBuilder {
      * Initializes the InternApplicationBuilder with the data of {@code internApplicationToCopy}.
      */
     public InternApplicationBuilder(InternApplication internApplicationToCopy) {
+        id = internApplicationToCopy.getId();
         company = internApplicationToCopy.getCompany();
         role = internApplicationToCopy.getRole();
         cycle = internApplicationToCopy.getCycle();
@@ -110,6 +113,6 @@ public class InternApplicationBuilder {
     }
 
     public InternApplication build() {
-        return new InternApplication(company, role, cycle, note, status, deadline);
+        return new InternApplication(id, company, role, cycle, note, status, deadline);
     }
 }

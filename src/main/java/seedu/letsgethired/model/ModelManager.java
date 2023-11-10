@@ -14,6 +14,7 @@ import javafx.collections.transformation.SortedList;
 import seedu.letsgethired.commons.core.GuiSettings;
 import seedu.letsgethired.commons.core.LogsCenter;
 import seedu.letsgethired.model.application.InternApplication;
+import seedu.letsgethired.model.application.InternApplicationComparator;
 
 /**
  * Represents the in-memory model of the intern tracker data.
@@ -133,6 +134,12 @@ public class ModelManager implements Model {
     @Override
     public ObservableList<InternApplication> getFilteredInternApplicationList() {
         return filteredSortedInternApplications;
+    }
+
+    @Override
+    public void resetSortFilterProperty() {
+        filteredInternApplications.setPredicate(x -> true);
+        filteredSortedInternApplications.setComparator(InternApplicationComparator.DEFAULT_SORT_COMPARATOR);
     }
 
     @Override

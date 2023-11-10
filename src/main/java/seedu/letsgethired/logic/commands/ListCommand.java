@@ -1,7 +1,6 @@
 package seedu.letsgethired.logic.commands;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.letsgethired.model.Model.PREDICATE_SHOW_ALL_APPLICATIONS;
 
 import seedu.letsgethired.model.Model;
 
@@ -18,7 +17,7 @@ public class ListCommand extends Command {
     @Override
     public CommandResult execute(Model model) {
         requireNonNull(model);
-        model.updateFilteredInternApplicationList(PREDICATE_SHOW_ALL_APPLICATIONS);
+        model.getFilteredInternApplicationList();
         return new CommandResult(MESSAGE_SUCCESS);
     }
 }

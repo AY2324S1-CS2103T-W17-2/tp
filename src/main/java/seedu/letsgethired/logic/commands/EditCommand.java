@@ -20,6 +20,7 @@ import seedu.letsgethired.model.Model;
 import seedu.letsgethired.model.application.Company;
 import seedu.letsgethired.model.application.Cycle;
 import seedu.letsgethired.model.application.Deadline;
+import seedu.letsgethired.model.application.Id;
 import seedu.letsgethired.model.application.InternApplication;
 import seedu.letsgethired.model.application.Note;
 import seedu.letsgethired.model.application.Role;
@@ -98,6 +99,8 @@ public class EditCommand extends Command {
             EditInternApplicationDescriptor editInternApplicationDescriptor) {
         assert internApplicationToEdit != null;
 
+        Id id = editInternApplicationDescriptor.getId()
+                .orElse(internApplicationToEdit.getId());
         Company updatedCompany = editInternApplicationDescriptor.getCompany()
                 .orElse(internApplicationToEdit.getCompany());
         Role updatedRole = editInternApplicationDescriptor.getRole()
@@ -112,6 +115,7 @@ public class EditCommand extends Command {
                 .orElse(internApplicationToEdit.getDeadline());
 
         return new InternApplication(
+                id,
                 updatedCompany,
                 updatedRole,
                 updatedCycle,
@@ -149,6 +153,7 @@ public class EditCommand extends Command {
      * corresponding field value of the intern application.
      */
     public static class EditInternApplicationDescriptor {
+        private Id id;
         private Company company;
         private Role role;
         private Cycle cycle;
@@ -162,6 +167,7 @@ public class EditCommand extends Command {
          * Copy constructor.
          */
         public EditInternApplicationDescriptor(EditInternApplicationDescriptor toCopy) {
+            setId(toCopy.id);
             setCompany(toCopy.company);
             setRole(toCopy.role);
             setCycle(toCopy.cycle);
@@ -174,7 +180,15 @@ public class EditCommand extends Command {
          * Returns true if at least one field is edited.
          */
         public boolean isAnyFieldEdited() {
-            return CollectionUtil.isAnyNonNull(company, role, cycle, status, deadline);
+            return CollectionUtil.isAnyNonNull(id, company, role, cycle, status, deadline);
+        }
+
+        public void setId(Id id) {
+            this.id = id;
+        }
+
+        public Optional<Id> getId() {
+            return Optional.ofNullable(id);
         }
 
         public void setCompany(Company company) {

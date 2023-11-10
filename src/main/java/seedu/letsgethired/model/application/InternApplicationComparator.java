@@ -42,6 +42,8 @@ public class InternApplicationComparator implements Comparator<InternApplication
             new InternApplicationComparator((a, b) -> b.getDeadline().compareTo(a.getDeadline()));
     public static final InternApplicationComparator DEADLINE_COMPARATOR_ASCENDING = new InternApplicationComparator(
             Comparator.comparing(InternApplication::getDeadline));
+    public static final InternApplicationComparator DEFAULT_SORT_COMPARATOR = new InternApplicationComparator(
+            Comparator.comparing(InternApplication::getId));
 
     private final List<Comparator<InternApplication>> comparators;
 

@@ -27,7 +27,6 @@ public class JsonAdaptedInternApplicationTest {
     private static final ArrayList<String> INVALID_NOTE = Arrays.stream(new String[]{" "})
             .collect(Collectors.toCollection(ArrayList<String>::new));
     private static final String INVALID_DEADLINE = "25 Oct";
-
     private static final String VALID_NAME = OPTIVER.getCompany().toString();
     private static final String VALID_ROLE = OPTIVER.getRole().toString();
     private static final String VALID_CYCLE = OPTIVER.getCycle().toString();
@@ -46,6 +45,7 @@ public class JsonAdaptedInternApplicationTest {
 
     @Test
     public void toModelType_invalidName_throwsIllegalValueException() {
+
         JsonAdaptedInternApplication application =
                 new JsonAdaptedInternApplication(
                         INVALID_COMPANY, VALID_ROLE, VALID_CYCLE, VALID_NOTE, VALID_STATUS, VALID_DEADLINE);

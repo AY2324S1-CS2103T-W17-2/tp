@@ -10,6 +10,7 @@ import seedu.letsgethired.commons.exceptions.IllegalValueException;
 import seedu.letsgethired.model.application.Company;
 import seedu.letsgethired.model.application.Cycle;
 import seedu.letsgethired.model.application.Deadline;
+import seedu.letsgethired.model.application.Id;
 import seedu.letsgethired.model.application.InternApplication;
 import seedu.letsgethired.model.application.Note;
 import seedu.letsgethired.model.application.Role;
@@ -66,6 +67,7 @@ class JsonAdaptedInternApplication {
      * @throws IllegalValueException if there were any data constraints violated in the adapted intern application.
      */
     public InternApplication toModelType() throws IllegalValueException {
+        final Id modelId = Id.generateNewUseableId();
         if (company == null) {
             throw new IllegalValueException(String.format(MISSING_FIELD_MESSAGE_FORMAT, Company.class.getSimpleName()));
         }
@@ -117,7 +119,7 @@ class JsonAdaptedInternApplication {
             throw new IllegalValueException(Deadline.MESSAGE_CONSTRAINTS);
         }
         final Deadline modelDeadline = new Deadline(deadline);
-
-        return new InternApplication(modelCompany, modelRole, modelCycle, modelNote, modelStatus, modelDeadline);
+        return new InternApplication(modelId, modelCompany, modelRole, modelCycle, modelNote,
+                modelStatus, modelDeadline);
     }
 }

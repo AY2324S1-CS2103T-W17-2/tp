@@ -16,6 +16,7 @@ import seedu.letsgethired.commons.util.ToStringBuilder;
 public class InternApplication {
 
     // Identity fields
+    private final Id id;
     private final Company company;
     private final Role role;
     private final Cycle cycle;
@@ -29,6 +30,7 @@ public class InternApplication {
      */
     public InternApplication(Company company, Role role, Cycle cycle, Status status, Deadline deadline) {
         requireAllNonNull(company, role, cycle, status, deadline);
+        this.id = Id.generateNewUseableId();
         this.company = company;
         this.role = role;
         this.cycle = cycle;
@@ -39,6 +41,7 @@ public class InternApplication {
 
     /**
      * A second constructor to instantiate another InternApplication with an existing list of Notes
+     * @param id representing the id key of the intern application in the database
      * @param company Company object representing the company
      * @param role Role object representing the role of the job
      * @param cycle Cycle object representing the cycle of the internship period
@@ -46,15 +49,20 @@ public class InternApplication {
      * @param status Status object representing the status of the application
      * @param deadline Deadline object representing deadline of the application
      */
-    public InternApplication(Company company, Role role, Cycle cycle,
+    public InternApplication(Id id, Company company, Role role, Cycle cycle,
                              List<Note> notes, Status status, Deadline deadline) {
-        requireAllNonNull(company, role, cycle, notes, status, deadline);
+        requireAllNonNull(id, company, role, cycle, notes, status, deadline);
+        this.id = id;
         this.company = company;
         this.role = role;
         this.cycle = cycle;
         this.notes = Collections.unmodifiableList(notes);
         this.status = status;
         this.deadline = deadline;
+    }
+
+    public Id getId() {
+        return id;
     }
 
     public Company getCompany() {
@@ -105,7 +113,7 @@ public class InternApplication {
     public InternApplication addNote(Note note) {
         List<Note> mutableList = new ArrayList<>(this.notes);
         mutableList.add(note);
-        return new InternApplication(company, role, cycle, mutableList, status, deadline);
+        return new InternApplication(id, company, role, cycle, mutableList, status, deadline);
     }
 
     /**
@@ -116,7 +124,7 @@ public class InternApplication {
     public InternApplication deleteNote(int index) {
         List<Note> mutableList = new ArrayList<>(this.notes);
         mutableList.remove(index - 1);
-        return new InternApplication(company, role, cycle, mutableList, status, deadline);
+        return new InternApplication(id, company, role, cycle, mutableList, status, deadline);
     }
 
     /**
@@ -180,6 +188,13 @@ public class InternApplication {
      * @return A new InternApplication object with the same company, role, cycle, note, and status.
      */
     public InternApplication clone() {
-        return new InternApplication(this.company, this.role, this.cycle, this.notes, this.status, this.deadline);
+        return new InternApplication(
+                this.id,
+                this.company,
+                this.role,
+                this.cycle,
+                this.notes,
+                this.status,
+                this.deadline);
     }
 }

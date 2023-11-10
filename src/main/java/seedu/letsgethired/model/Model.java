@@ -88,6 +88,11 @@ public interface Model {
     ObservableList<InternApplication> getFilteredInternApplicationList();
 
     /**
+     * Resets the intern application list to its default order
+     */
+    void resetSortFilterProperty();
+
+    /**
      * Updates the filter of the filtered intern application list to filter by the given {@code predicate}.
      *
      * @throws NullPointerException if {@code predicate} is null.
