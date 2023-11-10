@@ -56,8 +56,12 @@ public class SortCommandParser implements Parser<SortCommand> {
             comparator = InternApplicationComparator.getComparator(PREFIX_DEADLINE, order);
         }
 
-        if (comparator == null) {
+        if (argMultimap.getPreamble().equalsIgnoreCase("default")) {
             comparator = InternApplicationComparator.DEFAULT_SORT_COMPARATOR;
+        }
+
+        if (comparator == null) {
+            throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, SortCommand.MESSAGE_USAGE));
         }
 
         return new SortCommand(comparator);

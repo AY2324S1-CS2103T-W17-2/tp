@@ -137,9 +137,8 @@ public class ModelManager implements Model {
     }
 
     @Override
-    public void resetSortFilterProperty() {
-        filteredInternApplications.setPredicate(x -> true);
-        filteredSortedInternApplications.setComparator(InternApplicationComparator.DEFAULT_SORT_COMPARATOR);
+    public void getUnfilteredInternApplicationList() {
+        updateFilteredInternApplicationList(x -> true);
     }
 
     @Override

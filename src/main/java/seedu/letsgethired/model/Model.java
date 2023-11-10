@@ -88,9 +88,9 @@ public interface Model {
     ObservableList<InternApplication> getFilteredInternApplicationList();
 
     /**
-     * Resets the intern application list to its default order
+     * Resets the filter predicate of the intern application list
      */
-    void resetSortFilterProperty();
+    void getUnfilteredInternApplicationList();
 
     /**
      * Updates the filter of the filtered intern application list to filter by the given {@code predicate}.

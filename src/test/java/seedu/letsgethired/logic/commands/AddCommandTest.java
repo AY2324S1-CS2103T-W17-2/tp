@@ -155,7 +155,7 @@ public class AddCommandTest {
         }
 
         @Override
-        public void resetSortFilterProperty() {
+        public void getUnfilteredInternApplicationList() {
             throw new AssertionError("This method should not be called.");
         }
 
