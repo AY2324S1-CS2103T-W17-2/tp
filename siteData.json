@@ -64,14 +64,18 @@
         "use-cases": "Use cases",
         "non-functional-requirements": "Non-Functional Requirements",
         "glossary": "Glossary",
-        "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
+        "appendix-instructions-for-manual-testing": "Appendix: Instructions for Manual Testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-an-internapplication": "Deleting an internApplication",
         "saving-data": "Saving data",
         "appendix-effort": "Appendix: Effort",
         "designing-organisation-features": "Designing Organisation Features",
         "developing-a-better-user-interface": "Developing a Better User Interface",
-        "designing-notes-functionality": "Designing Notes Functionality"
+        "designing-notes-functionality": "Designing Notes Functionality",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements",
+        "improved-command-error-feedback": "Improved Command Error Feedback",
+        "improved-unknown-command-error-feedback": "Improved Unknown Command Error Feedback",
+        "improved-visibility-of-newly-added-internship-applications": "Improved Visibility of Newly Added Internship Applications"
       },
       "headingKeywords": {}
     },
