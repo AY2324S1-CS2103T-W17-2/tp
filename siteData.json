@@ -67,7 +67,11 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-an-internapplication": "Deleting an internApplication",
-        "saving-data": "Saving data"
+        "saving-data": "Saving data",
+        "appendix-effort": "Appendix: Effort",
+        "designing-organisation-features": "Designing Organisation Features",
+        "developing-a-better-user-interface": "Developing a better User Interface",
+        "designing-notes-functionality": "Designing Notes Functionality"
       },
       "headingKeywords": {}
     },
