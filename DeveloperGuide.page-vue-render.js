@@ -743,6 +743,6 @@ with(this){return _c('p',[_c('strong',[_v("Expected Benefits")]),_v(":")])}
 with(this){return _c('ul',[_c('li',[_c('strong',[_v("Improved Beginner Experience")]),_v(": By providing the option to redo, new users can have an easier time\nexploring commands and undoing and redoing changes when necessary.")]),_v(" "),_c('li',[_c('strong',[_v("Increased Efficiency")]),_v(": This enhancement allows users to manage their applications more efficiently\nand save time in the event of an unintentional undos.")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Sun, 12 Nov 2023, 1:46:19 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.1.0")]),_v(", generated on Sun, 12 Nov 2023, 1:48:27 GMT+8]")])])])}
 }];
   
