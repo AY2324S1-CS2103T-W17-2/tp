@@ -77,7 +77,10 @@
         "improved-unknown-command-error-feedback": "Improved Unknown Command Error Feedback",
         "improved-visibility-of-newly-added-internship-applications": "Improved Visibility of Newly Added Internship Applications",
         "sorting-by-multiple-fields": "Sorting by Multiple Fields",
-        "enhanced-version-control-redo": "Enhanced Version Control: Redo"
+        "enhanced-version-control-redo": "Enhanced Version Control: Redo",
+        "default-sort-order": "Default Sort Order",
+        "edit-notes": "Edit Notes",
+        "sort-status-enhancement": "Sort Status Enhancement"
       },
       "headingKeywords": {}
     },
