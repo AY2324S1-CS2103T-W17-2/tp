@@ -12,10 +12,10 @@ activate ui UI_COLOR
 ui -[UI_COLOR]> logic : execute("view 1")
 activate logic LOGIC_COLOR
 
-logic --[LOGIC_COLOR]> ui
+logic --[LOGIC_COLOR]> ui: CommandResult
 deactivate logic
 
-ui -[UI_COLOR]> ui : displayDetails()
+ui -[UI_COLOR]> ui : displayDetails(internApplication)
 activate ui UI_COLOR
 
 ui --[UI_COLOR]> ui
