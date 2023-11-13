@@ -32,39 +32,35 @@ efficiency</strong>. Thus, <em>LetsGetHired</em> is
 the advantages of a Graphical User Interface
 (GUI). If you are a swift typist, <em>LetsGetHired</em> can streamline your internship
 tracking <strong>faster than many standard
-GUI-based tools available.</strong></p> <p>Given below are my contributions to the project.</p> <ul><li><p>New Feature:</p> <ul><li><p>Created the <code class="hljs inline no-lang">SelectView</code> panel in the UI.
-<a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/58">#58</a> and
+GUI-based tools available.</strong></p> <p>Given below are my contributions to the project.</p> <ul><li><p><strong>New Feature</strong>:</p> <ul><li><p><strong>Created the <code class="hljs inline no-lang">SelectView</code> panel in the UI.</strong> <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/58">#58</a> and
 <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/105">#105</a></p> <ul><li><em>What it does</em>: Displays a larger panel beside the <code class="hljs inline no-lang">InternApplicationListView</code>
 that serves to display all the details of the intern application.</li> <li><em>Justification</em>: It is our intention to allow users to as many notes as they want
 on an intern application. The <code class="hljs inline no-lang">InternApplicationListCard</code> alone is not large enough to
 display all the information in a neat and easy to read manner. Hence, a larger panel in
 the UI is needed.</li> <li><em>Highlights</em>: The panel is made with a table from a <code class="hljs inline no-lang">GridPane</code> in which each table
 cell will house specific data so that we can display text in a neat and text-aligned
-manner.</li></ul></li> <li><p>Display data encapsulated in InternApplication onto SelectView
-<a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/58">#58</a></p> <ul><li><em>What it does</em>: Displays the data of an <code class="hljs inline no-lang">InternshipApplication</code> onto the <code class="hljs inline no-lang">SelectView</code>.</li> <li><em>Justification</em>: Important for users to be able to accurately see the important
+manner.</li></ul></li> <li><p><strong>Display data encapsulated in InternApplication onto SelectView</strong> <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/58">#58</a></p> <ul><li><em>What it does</em>: Displays the data of an <code class="hljs inline no-lang">InternshipApplication</code> onto the <code class="hljs inline no-lang">SelectView</code>.</li> <li><em>Justification</em>: Important for users to be able to accurately see the important
 information of the <code class="hljs inline no-lang">InternApplication</code> in the <code class="hljs inline no-lang">SelectView</code></li> <li><em>Highlights</em>: Main logic behind this implementation is the creation of
 <code class="hljs inline no-lang">SelectView#displayDetails(InternApplication i)</code> which extracts the value of each field
 and displays them into the corresponding <code class="hljs inline no-lang">TextField</code> or <code class="hljs inline no-lang">TextArea</code>. The function is then
-triggered whenever a command is executed in <code class="hljs inline no-lang">MainWindow#executeCommand(String commandText)</code></li></ul></li> <li><p>Display InternApplication details by selecting or clicking the card in the InternApplicationListPanel
-<a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/80">#58</a> and
+triggered whenever a command is executed in <code class="hljs inline no-lang">MainWindow#executeCommand(String commandText)</code></li></ul></li> <li><p><strong>Display InternApplication details by selecting or clicking the card in the InternApplicationListPanel</strong> <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/80">#58</a> and
 <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/105">#105</a> and
 <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/174">#174</a></p> <ul><li><em>What it does</em>: Displays the data of an <code class="hljs inline no-lang">InternshipApplication</code> onto the <code class="hljs inline no-lang">SelectView</code> when the card is
 selected with a mouseclick or arrow button.</li> <li><em>Justification</em>: Give users the option of using the mouse and arrow keys instead.</li> <li><em>Highlights</em>: Sets a listener function in the <code class="hljs inline no-lang">ListView</code> which calls the appropriate functions
-whenever a change in list cell selection occurs</li></ul></li></ul></li> <li><p>Enhancements to existing features:</p> <ul><li>Enhanced notes feature implemented by Aprup to allow for multiple notes rather than single note
-<a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/103">#103</a> <ul><li><em>What it does</em>: Allows each individual <code class="hljs inline no-lang">InternApplication</code> to encapsulate a list of notes</li> <li><em>Justification</em>: Allow users to add as many notes as they want on each entry, rather than
+whenever a change in list cell selection occurs</li></ul></li></ul></li> <li><p><strong>Enhancements to existing features</strong>:</p> <ul><li><strong>Enhanced notes feature implemented to allow for multiple notes rather than single note</strong> <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/103">#103</a> <ul><li><em>What it does</em>: Allows each individual <code class="hljs inline no-lang">InternApplication</code> to encapsulate a list of notes</li> <li><em>Justification</em>: Allow users to add as many notes as they want on each entry, rather than
 being limited to one single note per entry.</li> <li><em>Highlights</em>: The <code class="hljs inline no-lang">InternApplication</code> class will hold a <code class="hljs inline no-lang">List&lt;Note</code> of instead of <code class="hljs inline no-lang">Note</code>.
 Subsequently, the note field in the json is also modified to hold an array of strings.</li></ul></li></ul></li> <li><p><strong>Code contributed</strong>:</p> <ul><li><a href="https://nus-cs2103-ay2324s1.github.io/tp-dashboard/?search=tyouwei&amp;breakdown=true">RepoSense link</a>
 summarizes my contributions to the codebase</li> <li><a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pulls?q=is%3Apr+author%3Atyouwei">PRs authored by me</a> -
-over 20+ PRs authored and merged</li></ul></li> <li><p>Documentation:</p> <ul><li>User Guide:
-<ul><li>Added the Delete section</li> <li>Updated the Note section in lieu of multiple notes feature</li></ul></li> <li>Developer Guide:
+over 20+ PRs authored and merged</li></ul></li> <li><p><strong>Documentation</strong>:</p> <ul><li><strong>User Guide</strong>:
+<ul><li>Added the Delete section</li> <li>Updated the Note section in lieu of multiple notes feature</li></ul></li> <li><strong>Developer Guide</strong>:
 <ul><li>Updated the Note section in lieu of multiple notes feature
 <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/170">#170</a></li> <li>Added the SelectView UI Implementation section
 <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/87">#87</a></li> <li>Added the Sort Default Order section in Appendix
 <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/215">#215</a></li> <li>Added the Edit Notes section in Appendix
 <a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/215">#215</a></li> <li>Added the Meaningful Sort Status section in Appendix
-<a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/215">#215</a></li></ul></li></ul></li> <li><p>Community:</p> <ul><li><a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pulls?q=is%3Apr+reviewed-by%3Atyouwei">PRs reviewed by me</a> -
+<a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pull/215">#215</a></li></ul></li></ul></li> <li><p><strong>Community</strong>:</p> <ul><li><a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/pulls?q=is%3Apr+reviewed-by%3Atyouwei">PRs reviewed by me</a> -
 over 10+ PRs reviewed</li> <li><a href="https://github.com/AY2324S1-CS2103T-W17-2/tp/issues?q=is%3Aissue+author%3Atyouwei">Bug reports raise by me</a> -
-posted 3 bug reports to help team improve the product</li></ul></li></ul></div> <nav id="page-nav" data-v-e6005420><div class="nav-component slim-scroll" data-v-e6005420></div> <!----></nav> <div aria-hidden="true" class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;"><i class="fas fa-arrow-circle-up"></i></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.1.0</a>, generated on Mon, 13 Nov 2023, 15:32:08 GMT+8]</small></div></footer></div>
+posted 3 bug reports to help team improve the product</li></ul></li></ul></div> <nav id="page-nav" data-v-e6005420><div class="nav-component slim-scroll" data-v-e6005420></div> <!----></nav> <div aria-hidden="true" class="scroll-top-button fa-lg d-print-none" style="display:none;bottom:2%;right:2%;position:fixed;"><i class="fas fa-arrow-circle-up"></i></div></div> <footer><div class="text-center"><small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 5.1.0</a>, generated on Mon, 13 Nov 2023, 15:41:27 GMT+8]</small></div></footer></div>
 </body><script src="/tp/markbind/js/bootstrap-utility.min.js"></script>
 <script>
   MarkBind.setupWithSearch()
