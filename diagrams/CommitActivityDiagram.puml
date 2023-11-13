@@ -19,7 +19,7 @@ else ([else])
 :Check if command is undo;
 if () then ([command is undo])
     :Check if there are saved states;
-if () then ([there are saved states)
+if () then ([there are saved states])
     :perform undo;
 else ([else])
     : show already at latest change;

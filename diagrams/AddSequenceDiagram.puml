@@ -49,7 +49,7 @@ deactivate InternTrackerParser
 LogicManager -> AddCommand : execute()
 activate AddCommand
 
-AddCommand -> Model : addInternApplication()
+AddCommand -> Model : addInternApplication(internApplication)
 activate Model
 
 Model --> AddCommand

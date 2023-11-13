@@ -49,8 +49,7 @@ deactivate InternTrackerParser
 LogicManager -> DeleteCommand : execute()
 activate DeleteCommand
 
-DeleteCommand -> Model : deleteInternApplication(0)
-'Note: The index is 0 because the index is 1-based, but the model is 0-based.
+DeleteCommand -> Model : deleteInternApplication(internApplication)
 activate Model
 
 Model --> DeleteCommand

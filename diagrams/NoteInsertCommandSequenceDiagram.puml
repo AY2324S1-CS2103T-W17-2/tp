@@ -49,7 +49,7 @@ deactivate InternTrackerParser
 LogicManager -> NoteInsertCommand : execute()
 activate NoteInsertCommand
 
-NoteInsertCommand -> Model : setInternApplication()
+NoteInsertCommand -> Model : setInternApplication(internApp, internAppToEdit)
 activate Model
 
 

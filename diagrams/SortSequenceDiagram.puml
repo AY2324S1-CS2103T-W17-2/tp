@@ -6,7 +6,7 @@ box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
 participant ":InternTrackerParser" as InternTrackerParser LOGIC_COLOR
 participant ":SortCommandParser" as SortCommandParser LOGIC_COLOR
-participant ":Comparator" as Comparator LOGIC_COLOR
+participant "c:Comparator" as Comparator LOGIC_COLOR
 participant "s:SortCommand" as SortCommand LOGIC_COLOR
 participant ":CommandResult" as CommandResult LOGIC_COLOR
 end box
@@ -57,7 +57,7 @@ deactivate InternTrackerParser
 LogicManager -> SortCommand : execute()
 activate SortCommand
 
-SortCommand -> Model : updateFilteredSortedInternApplicationList()
+SortCommand -> Model : updateFilteredSortedInternApplicationList(c)
 activate Model
 
 Model --> SortCommand

@@ -49,7 +49,7 @@ deactivate InternTrackerParser
 LogicManager -> NoteDeleteCommand : execute()
 activate NoteDeleteCommand
 
-NoteDeleteCommand -> Model : setInternApplication()
+NoteDeleteCommand -> Model : setInternApplication(internApp, internAppToEdit)
 activate Model
 
 Model --> NoteDeleteCommand
